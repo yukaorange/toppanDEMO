@@ -1,0 +1,18 @@
+<% 
+let page = 'home' //ページ名
+;%>
+<%- include('./_template-part/_head',{page:page});%>
+<%- include('./_template-part/_header',{page:page});%>
+<main class="main">
+  <div class="gallery" style="display:none;">
+    <img src="./images/t1.jpg" class="gallery_image">
+    <img src="./images/t2.jpg" class="gallery_image">
+    <img src="./images/t3.jpg" class="gallery_image">
+  </div>
+  <div id="container"></div>
+  <!-- 
+  <%- include('./_home/_home-',{ page : page }) ;%>
+  <%- include('./_home/_home-',{ page : page }) ;%>
+  -->
+</main>
+<%- include('./_template-part/_footer',{page:page}) ;%>
